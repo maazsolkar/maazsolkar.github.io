@@ -1,0 +1,87 @@
+/* ==========================================================================
+   MAAZ SOLKAR - CLOUD OPERATIONS PROFILE
+   Print Stylesheet for ATS & Clean Physical Print
+   ========================================================================== */
+
+@media print {
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  /* Hide interactive UI elements */
+  .site-header,
+  .mobile-drawer,
+  .mobile-drawer-backdrop,
+  .theme-toggle-btn,
+  .back-to-top,
+  .toast,
+  .btn,
+  .filter-tabs,
+  .modal-backdrop,
+  .matcher-container,
+  .site-footer,
+  .hero-ctas,
+  .hero-glow,
+  .project-actions {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+
+  /* Don't show links for internal anchor jumps or javascript */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .timeline::before {
+    display: none !important;
+  }
+  .timeline {
+    padding-left: 0 !important;
+  }
+  .timeline-dot {
+    display: none !important;
+  }
+
+  .timeline-card,
+  .project-card,
+  .metric-card,
+  .skill-category-card,
+  .cert-card,
+  .ats-resume-paper {
+    border: 1px solid #d1d5db !important;
+    page-break-inside: avoid;
+    margin-bottom: 12pt !important;
+    padding: 12pt !important;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    color: #000000 !important;
+  }
+}

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGcp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGcp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <filter id="shadowGcp" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="400" rx="16" fill="url(#bgGcp)" />
+  <rect x="1" y="1" width="838" height="398" rx="15" fill="none" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="40" y="45" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#38bdf8" letter-spacing="1">GCP SERVERLESS WEATHER LOGGER ARCHITECTURE</text>
+  <text x="40" y="68" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Event-Driven Ingestion, Cloud Functions, BigQuery Partitioned Storage &amp; IAM</text>
+
+  <!-- External API Node -->
+  <g transform="translate(40, 110)" filter="url(#shadowGcp)">
+    <rect width="180" height="180" rx="12" fill="url(#cardGcp)" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="90" cy="50" r="26" fill="#0369a1" opacity="0.3"/>
+    <!-- Weather Cloud Icon -->
+    <path d="M78 52 A 10 10 0 0 1 96 46 A 8 8 0 0 1 106 54 A 7 7 0 0 1 104 62 L 76 62 A 6 6 0 0 1 78 52 Z" fill="#38bdf8"/>
+    <text x="90" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">External Weather API</text>
+    <text x="90" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">REST HTTP Endpoint</text>
+    <text x="90" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#38bdf8" text-anchor="middle">Rate Limited / Auth Key</text>
+    <rect x="25" y="152" width="130" height="18" rx="9" fill="#0ea5e9" opacity="0.2"/>
+    <text x="90" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">JSON Payload</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(225, 200)">
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <polygon points="70,-5 82,0 70,5" fill="#38bdf8"/>
+    <text x="40" y="-12" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">HTTP GET</text>
+  </g>
+
+  <!-- Google Cloud Function Node -->
+  <g transform="translate(315, 110)" filter="url(#shadowGcp)">
+    <rect width="210" height="180" rx="12" fill="url(#cardGcp)" stroke="#10b981" stroke-width="2"/>
+    <circle cx="105" cy="50" r="26" fill="#047857" opacity="0.3"/>
+    <!-- Function Icon -->
+    <path d="M95 40 L115 40 L100 52 L112 52 L95 64 L102 52 L90 52 Z" fill="#34d399"/>
+    <text x="105" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Cloud Functions</text>
+    <text x="105" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Python 3 Runtime</text>
+    <text x="105" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#34d399" text-anchor="middle">Schema Validation &amp; ETL</text>
+    <rect x="30" y="152" width="150" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+    <text x="105" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#34d399" text-anchor="middle">IAM Service Account Auth</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(530, 200)">
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#34d399" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <polygon points="70,-5 82,0 70,5" fill="#34d399"/>
+    <text x="40" y="-12" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Insert All / Streaming</text>
+  </g>
+
+  <!-- Google BigQuery Node -->
+  <g transform="translate(615, 110)" filter="url(#shadowGcp)">
+    <rect width="185" height="180" rx="12" fill="url(#cardGcp)" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="92" cy="50" r="26" fill="#b45309" opacity="0.3"/>
+    <!-- Database cylinder -->
+    <ellipse cx="92" cy="45" rx="18" ry="6" fill="#fbbf24"/>
+    <path d="M74 45 v12 c0 4 8 6 18 6 s18 -2 18 -6 v-12" fill="#fbbf24" opacity="0.7"/>
+    <path d="M74 57 v10 c0 4 8 6 18 6 s18 -2 18 -6 v-10" fill="#fbbf24"/>
+    <text x="92" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Google BigQuery</text>
+    <text x="92" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Analytics Warehouse</text>
+    <text x="92" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#fbbf24" text-anchor="middle">Time-Partitioned Tables</text>
+    <rect x="25" y="152" width="135" height="18" rx="9" fill="#f59e0b" opacity="0.2"/>
+    <text x="92" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#fbbf24" text-anchor="middle">SQL Analytics &amp; Reports</text>
+  </g>
+
+  <!-- Security & Observability Box -->
+  <g transform="translate(40, 315)">
+    <rect width="760" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="3 3"/>
+    <text x="25" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Security &amp; Operational Controls:</text>
+    <text x="25" y="44" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">• Zero hardcoded credentials (Secret Manager / Env vars) • Cloud Logging for error diagnostics • BigQuery schema validation</text>
+  </g>
+</svg>

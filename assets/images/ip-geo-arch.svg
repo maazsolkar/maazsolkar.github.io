@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGeo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGeo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <filter id="shadowGeo" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="840" height="400" rx="16" fill="url(#bgGeo)" />
+  <rect x="1" y="1" width="838" height="398" rx="15" fill="none" stroke="#334155" stroke-width="1.5" />
+
+  <text x="40" y="45" font-family="-apple-system, sans-serif" font-size="16" font-weight="700" fill="#38bdf8" letter-spacing="1">IP GEOLOCATION EVENT PIPELINE ARCHITECTURE</text>
+  <text x="40" y="68" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8">Ingestion trigger, Geolocation API Resolution, JSON Normalization &amp; BigQuery Audit Log</text>
+
+  <!-- Incoming Traffic Node -->
+  <g transform="translate(40, 110)" filter="url(#shadowGeo)">
+    <rect width="180" height="180" rx="12" fill="url(#cardGeo)" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="90" cy="50" r="26" fill="#4338ca" opacity="0.3"/>
+    <!-- Pin / Network globe -->
+    <circle cx="90" cy="50" r="14" fill="none" stroke="#818cf8" stroke-width="2"/>
+    <ellipse cx="90" cy="50" rx="6" ry="14" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="76" y1="50" x2="104" y2="50" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="90" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Client Traffic</text>
+    <text x="90" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Incoming IP Requests</text>
+    <text x="90" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#818cf8" text-anchor="middle">HTTP Header Extraction</text>
+    <rect x="25" y="152" width="130" height="18" rx="9" fill="#6366f1" opacity="0.2"/>
+    <text x="90" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#818cf8" text-anchor="middle">Raw IP Payload</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(225, 200)">
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#818cf8" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <polygon points="70,-5 82,0 70,5" fill="#818cf8"/>
+    <text x="40" y="-12" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Trigger Hook</text>
+  </g>
+
+  <!-- Python Cloud Function Node -->
+  <g transform="translate(315, 110)" filter="url(#shadowGeo)">
+    <rect width="210" height="180" rx="12" fill="url(#cardGeo)" stroke="#0ea5e9" stroke-width="2"/>
+    <circle cx="105" cy="50" r="26" fill="#0284c7" opacity="0.3"/>
+    <!-- Python icon / Code bracket -->
+    <path d="M92 42 L105 34 L118 42 L105 50 Z" fill="#38bdf8"/>
+    <path d="M92 56 L105 48 L118 56 L105 64 Z" fill="#0284c7"/>
+    <text x="105" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">Python Ingestion</text>
+    <text x="105" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Cloud Functions v2</text>
+    <text x="105" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#38bdf8" text-anchor="middle">Geo Resolution &amp; Schema</text>
+    <rect x="30" y="152" width="150" height="18" rx="9" fill="#0ea5e9" opacity="0.2"/>
+    <text x="105" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#38bdf8" text-anchor="middle">IAM Service Role Security</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(530, 200)">
+    <line x1="0" y1="0" x2="70" y2="0" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <polygon points="70,-5 82,0 70,5" fill="#38bdf8"/>
+    <text x="40" y="-12" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Structured Append</text>
+  </g>
+
+  <!-- BigQuery Analytics Node -->
+  <g transform="translate(615, 110)" filter="url(#shadowGeo)">
+    <rect width="185" height="180" rx="12" fill="url(#cardGeo)" stroke="#10b981" stroke-width="2"/>
+    <circle cx="92" cy="50" r="26" fill="#047857" opacity="0.3"/>
+    <!-- Analytics chart in cylinder -->
+    <ellipse cx="92" cy="45" rx="18" ry="6" fill="#34d399"/>
+    <path d="M74 45 v12 c0 4 8 6 18 6 s18 -2 18 -6 v-12" fill="#34d399" opacity="0.7"/>
+    <path d="M74 57 v10 c0 4 8 6 18 6 s18 -2 18 -6 v-10" fill="#34d399"/>
+    <text x="92" y="98" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#f8fafc" text-anchor="middle">BigQuery Audit Log</text>
+    <text x="92" y="120" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Partitioned Dataset</text>
+    <text x="92" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#34d399" text-anchor="middle">Geo Latitude/Longitude</text>
+    <rect x="25" y="152" width="135" height="18" rx="9" fill="#10b981" opacity="0.2"/>
+    <text x="92" y="165" font-family="-apple-system, sans-serif" font-size="9" fill="#34d399" text-anchor="middle">Threat &amp; Traffic Trends</text>
+  </g>
+
+  <!-- Operational Best Practices Footer -->
+  <g transform="translate(40, 315)">
+    <rect width="760" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-dasharray="3 3"/>
+    <text x="25" y="26" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Operational &amp; Privacy Design:</text>
+    <text x="25" y="44" font-family="-apple-system, sans-serif" font-size="10.5" fill="#94a3b8">• Anonymized hashing of internal client identities • Retry policies with exponential backoff • Automated cloud budget alerts</text>
+  </g>
+</svg>

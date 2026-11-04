@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud &amp; Infrastructure Projects | Maaz Solkar</title>
+  
+  <meta name="description" content="Explore hands-on cloud and infrastructure projects built by Maaz Solkar: GCP Serverless Weather Logger, IP Geolocation Pipeline, Local AI Docker Server, and Active Directory Lab.">
+  <meta name="keywords" content="Maaz Solkar, Cloud Projects, GCP Cloud Functions, BigQuery, Local AI Server, Docker, Ollama, Active Directory Lab, Windows Server">
+  <meta name="author" content="Maaz Solkar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://maazsolkar.github.io/projects.html">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Cloud and Infrastructure Projects - Maaz Solkar",
+    "description": "Production-grade cloud, containerization, and directory services implementations with architecture diagrams.",
+    "url": "https://maazsolkar.github.io/projects.html"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Maaz Solkar Homepage">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="20" fill="#0284c7" />
+          <path d="M30 65 L30 35 L40 50 L50 35 L50 65" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+          <path d="M60 62 C60 62 67 65 72 61 C77 57 71 52 64 50 C57 48 57 40 65 37 C71 35 75 38 75 38" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="78" cy="22" r="5" fill="#10b981" />
+        </svg>
+        <div class="brand-logo-text">
+          <span class="brand-name">Maaz Solkar</span>
+          <span class="brand-tag">Cloud &amp; Infrastructure</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="resume.html" class="nav-link">ATS Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle Color Theme">
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+          <svg class="moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+        </button>
+
+        <a href="assets/docs/Maaz_Solkar_Cloud_Operations_Resume.pdf" download class="btn btn-primary btn-sm">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Resume PDF</span>
+        </a>
+
+        <button class="mobile-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div style="margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle);">
+      <div style="font-weight: 800; font-size: 1.1rem; color: var(--text-primary);">Maaz Solkar</div>
+      <div style="font-size: 0.8rem; color: var(--text-accent);">https://maazsolkar.github.io</div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="experience.html" class="mobile-nav-link">Experience</a></li>
+      <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+      <li><a href="skills.html" class="mobile-nav-link">Skills</a></li>
+      <li><a href="resume.html" class="mobile-nav-link">ATS Resume</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="mainContent" class="section-spacing">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Cloud &amp; Infrastructure Labs</span>
+        <h1 class="section-title">Hands-On Implementations &amp; Architecture Specs</h1>
+        <p class="section-description">
+          Detailed architectural blueprints, operational handover documentation, security controls, and verification checklists. Click any diagram to inspect full-screen architecture specs.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" data-filter-group=".project-card">
+        <button type="button" class="filter-tab active" data-filter="all">All Projects (4)</button>
+        <button type="button" class="filter-tab" data-filter="serverless">Serverless &amp; Cloud (2)</button>
+        <button type="button" class="filter-tab" data-filter="containers">Linux &amp; Containers (1)</button>
+        <button type="button" class="filter-tab" data-filter="identity">Identity &amp; Systems (1)</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. GCP Weather Logger -->
+        <article id="gcp-weather" class="project-card" data-category="serverless">
+          <div class="project-preview" onclick="openProjectModal('GCP Serverless Weather Logger Architecture', 'assets/images/gcp-weather-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Python 3.11, Google Cloud Functions, BigQuery, Cloud IAM, REST APIs.</p><p><strong>Core Objectives:</strong> Automatically ingest meteorological data, perform schema normalization and data type casting, and persist structured analytical records into BigQuery without ongoing server maintenance.</p><p><strong>Operational Handover &amp; Security:</strong></p><ul><li>Dedicated IAM Service Account with least-privilege BigQuery Data Editor roles.</li><li>All API tokens stored in managed secret references—zero credentials hardcoded.</li><li>Automated error logging in Cloud Logging for real-time monitoring and retry policies.</li></ul></div>')">
+            <img src="assets/images/gcp-weather-arch.svg" alt="GCP Weather Logger Architecture" loading="lazy">
+            <div class="project-preview-overlay">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              <span>Click to Expand Architecture Spec</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h2 class="project-title">Serverless Weather Data Ingestion Pipeline</h2>
+              <span class="project-category-badge">GCP &amp; Python</span>
+            </div>
+            <p class="project-desc">
+              Constructed an automated event-driven ETL data pipeline in Python deployed on Google Cloud Functions. Collects external atmospheric metrics, performs JSON schema normalization, and streams structured records directly into BigQuery analytical storage.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 14px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.88rem; border: 1px solid var(--border-subtle);">
+              <strong>Key Operational Controls:</strong>
+              <ul style="margin-left: 18px; margin-top: 6px; color: var(--text-secondary);">
+                <li>Least-privilege IAM service account authentication</li>
+                <li>Partitioned BigQuery dataset for optimized query costs</li>
+                <li>Defensive exception handling for API timeouts and malformed payloads</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-pill">Google Cloud Functions</span>
+              <span class="project-tech-pill">Google BigQuery</span>
+              <span class="project-tech-pill">Python 3</span>
+              <span class="project-tech-pill">Cloud IAM</span>
+              <span class="project-tech-pill">REST APIs</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-sm" onclick="openProjectModal('GCP Serverless Weather Logger Architecture', 'assets/images/gcp-weather-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Python 3.11, Google Cloud Functions, BigQuery, Cloud IAM, REST APIs.</p><p><strong>Core Objectives:</strong> Automatically ingest meteorological data, perform schema normalization and data type casting, and persist structured analytical records into BigQuery without ongoing server maintenance.</p><p><strong>Operational Handover &amp; Security:</strong></p><ul><li>Dedicated IAM Service Account with least-privilege BigQuery Data Editor roles.</li><li>All API tokens stored in managed secret references—zero credentials hardcoded.</li><li>Automated error logging in Cloud Logging for real-time monitoring and retry policies.</li></ul></div>')">
+                <span>View Architecture Spec</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. IP Geo Location Logger -->
+        <article id="ip-geo" class="project-card" data-category="serverless">
+          <div class="project-preview" onclick="openProjectModal('IP Geolocation Event Pipeline Architecture', 'assets/images/ip-geo-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Python 3, Google Cloud Functions, BigQuery, REST HTTP Endpoint.</p><p><strong>Core Objectives:</strong> Serverless IP ingestion service that processes IP addresses, queries external geolocation services, and persists coordinates and regional attributes into an analytical BigQuery table.</p><p><strong>Privacy &amp; Security Design:</strong></p><ul><li>Client identifiers are cryptographically hashed before persistent warehouse storage.</li><li>Strict input validation prevents HTTP header injection or malformed IPv4/IPv6 strings.</li><li>Idempotent record ingestion to avoid duplicate telemetry rows.</li></ul></div>')">
+            <img src="assets/images/ip-geo-arch.svg" alt="IP Geolocation Pipeline Architecture" loading="lazy">
+            <div class="project-preview-overlay">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              <span>Click to Expand Architecture Spec</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h2 class="project-title">Automated IP Geolocation Analytics Logger</h2>
+              <span class="project-category-badge">Cloud Analytics</span>
+            </div>
+            <p class="project-desc">
+              Designed an event-triggered IP lookup and audit service running on Cloud Functions. Resolves geographic attributes (country, city, latitude/longitude, ISP) and stores clean records into Google BigQuery for security diagnostics and traffic heatmaps.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 14px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.88rem; border: 1px solid var(--border-subtle);">
+              <strong>Key Operational Controls:</strong>
+              <ul style="margin-left: 18px; margin-top: 6px; color: var(--text-secondary);">
+                <li>Strict regex sanitization of input IPv4/IPv6 address strings</li>
+                <li>Cryptographic anonymization to protect internal user privacy</li>
+                <li>Asynchronous batching and Cloud Logging integration</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-pill">Google Cloud Functions</span>
+              <span class="project-tech-pill">Google BigQuery</span>
+              <span class="project-tech-pill">Python</span>
+              <span class="project-tech-pill">JSON Parsing</span>
+              <span class="project-tech-pill">API Security</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-sm" onclick="openProjectModal('IP Geolocation Event Pipeline Architecture', 'assets/images/ip-geo-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Python 3, Google Cloud Functions, BigQuery, REST HTTP Endpoint.</p><p><strong>Core Objectives:</strong> Serverless IP ingestion service that processes IP addresses, queries external geolocation services, and persists coordinates and regional attributes into an analytical BigQuery table.</p><p><strong>Privacy &amp; Security Design:</strong></p><ul><li>Client identifiers are cryptographically hashed before persistent warehouse storage.</li><li>Strict input validation prevents HTTP header injection or malformed IPv4/IPv6 strings.</li><li>Idempotent record ingestion to avoid duplicate telemetry rows.</li></ul></div>')">
+                <span>View Architecture Spec</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Local AI Server -->
+        <article id="local-ai" class="project-card" data-category="containers">
+          <div class="project-preview" onclick="openProjectModal('Local AI Inference Container Stack', 'assets/images/local-ai-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Linux Ubuntu, Docker &amp; Docker Compose, Ollama Engine, Open WebUI.</p><p><strong>Core Objectives:</strong> Host private, air-gapped language models locally with a web interface, protected behind internal container networking and resource quotas.</p><p><strong>Operational Handover &amp; Reliability:</strong></p><ul><li>Ollama API port 11434 is bound exclusively to the private Docker bridge (never exposed publicly).</li><li>Named volume mounts ensure model weights, user accounts, and chat histories survive host reboots.</li><li>CPU/RAM resource reservations configured to prevent container out-of-memory (OOM) crashes.</li></ul></div>')">
+            <img src="assets/images/local-ai-arch.svg" alt="Local AI Server Architecture" loading="lazy">
+            <div class="project-preview-overlay">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              <span>Click to Expand Architecture Spec</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h2 class="project-title">Containerized Local AI Inference Server</h2>
+              <span class="project-category-badge">Docker &amp; Linux</span>
+            </div>
+            <p class="project-desc">
+              Deployed a containerized self-hosted LLM runtime using Docker Compose on Linux. Configured an isolated bridge network linking Ollama's local inference API to an Open WebUI frontend with persistent storage volumes and system resource boundaries.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 14px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.88rem; border: 1px solid var(--border-subtle);">
+              <strong>Key Operational Controls:</strong>
+              <ul style="margin-left: 18px; margin-top: 6px; color: var(--text-secondary);">
+                <li>Ollama API locked inside Docker bridge network (zero public port exposure)</li>
+                <li>Named persistent Docker volumes ensuring data resilience across host reboots</li>
+                <li>Continuous CPU/RAM resource limits preventing host starvation</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-pill">Linux Ubuntu</span>
+              <span class="project-tech-pill">Docker</span>
+              <span class="project-tech-pill">Docker Compose</span>
+              <span class="project-tech-pill">Ollama API</span>
+              <span class="project-tech-pill">Open WebUI</span>
+              <span class="project-tech-pill">Resource Management</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-sm" onclick="openProjectModal('Local AI Inference Container Stack', 'assets/images/local-ai-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Linux Ubuntu, Docker &amp; Docker Compose, Ollama Engine, Open WebUI.</p><p><strong>Core Objectives:</strong> Host private, air-gapped language models locally with a web interface, protected behind internal container networking and resource quotas.</p><p><strong>Operational Handover &amp; Reliability:</strong></p><ul><li>Ollama API port 11434 is bound exclusively to the private Docker bridge (never exposed publicly).</li><li>Named volume mounts ensure model weights, user accounts, and chat histories survive host reboots.</li><li>CPU/RAM resource reservations configured to prevent container out-of-memory (OOM) crashes.</li></ul></div>')">
+                <span>View Architecture Spec</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Active Directory Lab -->
+        <article id="ad-lab" class="project-card" data-category="identity">
+          <div class="project-preview" onclick="openProjectModal('Active Directory Lab Architecture', 'assets/images/ad-lab-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Windows Server, Active Directory Domain Services (AD DS), DNS Server, Group Policy Management.</p><p><strong>Core Objectives:</strong> Hands-on directory services environment configured to build, harden, and validate domain administration, user lifecycles, and policy baselines.</p><p><strong>Operational Handover &amp; Testing:</strong></p><ul><li>Configured root domain controller and verified healthy Active Directory Domain Services.</li><li>Built forward and reverse DNS lookup zones with client record dynamic updates.</li><li>Designed structured OUs and implemented Group Policy Objects (GPOs) for screen timeout, password length, and restricted local administrative rights.</li><li>Joined Windows client VM to domain and confirmed Kerberos ticket authentication.</li></ul></div>')">
+            <img src="assets/images/ad-lab-arch.svg" alt="Active Directory Lab Architecture" loading="lazy">
+            <div class="project-preview-overlay">
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+              <span>Click to Expand Architecture Spec</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header-row">
+              <h2 class="project-title">Active Directory Domain Services &amp; Identity Lab</h2>
+              <span class="project-category-badge">Identity &amp; Systems</span>
+            </div>
+            <p class="project-desc">
+              Built an isolated Windows Server Active Directory lab. Promoted the Domain Controller, integrated enterprise DNS, structured departmental Organizational Units (OUs), applied security GPOs, and validated client authentication workflows.
+            </p>
+            <div style="background: var(--bg-tertiary); padding: 14px; border-radius: var(--radius-md); margin-bottom: 16px; font-size: 0.88rem; border: 1px solid var(--border-subtle);">
+              <strong>Key Operational Controls:</strong>
+              <ul style="margin-left: 18px; margin-top: 6px; color: var(--text-secondary);">
+                <li>Isolated virtual lab network preventing accidental external DHCP leaks</li>
+                <li>Hardened Group Policy Objects (GPOs) enforcing security baselines</li>
+                <li>Complete disaster recovery snapshots prior to schema adjustments</li>
+              </ul>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-pill">Windows Server</span>
+              <span class="project-tech-pill">Active Directory (AD DS)</span>
+              <span class="project-tech-pill">Group Policy (GPO)</span>
+              <span class="project-tech-pill">DNS Management</span>
+              <span class="project-tech-pill">Domain Joins</span>
+              <span class="project-tech-pill">Kerberos Auth</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary btn-sm" onclick="openProjectModal('Active Directory Lab Architecture', 'assets/images/ad-lab-arch.svg', '<div style=\'line-height: 1.6; font-size: 0.95rem;\'><p><strong>Stack:</strong> Windows Server, Active Directory Domain Services (AD DS), DNS Server, Group Policy Management.</p><p><strong>Core Objectives:</strong> Hands-on directory services environment configured to build, harden, and validate domain administration, user lifecycles, and policy baselines.</p><p><strong>Operational Handover &amp; Testing:</strong></p><ul><li>Configured root domain controller and verified healthy Active Directory Domain Services.</li><li>Built forward and reverse DNS lookup zones with client record dynamic updates.</li><li>Designed structured OUs and implemented Group Policy Objects (GPOs) for screen timeout, password length, and restricted local administrative rights.</li><li>Joined Windows client VM to domain and confirmed Kerberos ticket authentication.</li></ul></div>')">
+                <span>View Architecture Spec</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Modal Container -->
+  <div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle" class="modal-title">Architecture Diagram</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg viewBox="0 0 100 100" width="32" height="32" aria-hidden="true">
+              <rect width="100" height="100" rx="20" fill="#0284c7" />
+              <path d="M30 65 L30 35 L40 50 L50 35 L50 65" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+              <path d="M60 62 C60 62 67 65 72 61 C77 57 71 52 64 50 C57 48 57 40 65 37 C71 35 75 38 75 38" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="brand-name">Maaz Solkar</span>
+          </div>
+          <p>Junior Cloud Engineer &amp; IT/Cloud Administrator. AZ-900 Certified, AWS Solutions Architect trained.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About &amp; Journey</a></li>
+            <li><a href="experience.html" class="footer-link">Work Experience</a></li>
+            <li><a href="projects.html" class="footer-link">Cloud Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Credentials</div>
+          <ul class="footer-links">
+            <li><a href="skills.html" class="footer-link">Skills Matrix</a></li>
+            <li><a href="resume.html" class="footer-link">ATS Resume Hub</a></li>
+            <li><a href="assets/docs/Maaz_Solkar_Cloud_Operations_Resume.pdf" download class="footer-link">Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="mailto:contact.maazsolkar@gmail.com" class="footer-link">contact.maazsolkar@gmail.com</a></li>
+            <li><a href="https://maazsolkar.github.io" class="footer-link">https://maazsolkar.github.io</a></li>
+            <li><a href="contact.html" class="footer-link">Send Message →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Maaz Solkar. All rights reserved.</div>
+        <div style="font-size: 0.8rem; color: var(--text-muted);">
+          Privacy Shield: Personal phone numbers, passport, and street addresses are intentionally omitted.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/filters.js"></script>
+</body>
+</html>
